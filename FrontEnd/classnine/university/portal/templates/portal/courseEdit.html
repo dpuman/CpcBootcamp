@@ -1,0 +1,10 @@
+{% extends 'portal/layout.html' %}
+
+{% block body %}
+<form  method="POST" >
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter name" value="{{courses.name}}">
+    
+    <input type="submit" >
+</form>
+{% endblock  %}

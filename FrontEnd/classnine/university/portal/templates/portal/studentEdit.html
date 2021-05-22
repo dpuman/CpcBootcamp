@@ -1,0 +1,12 @@
+{% extends 'portal/layout.html' %}
+
+{% block body %}
+        <form method="POST">
+            {% csrf_token %}
+        <input type="text" name="name" placeholder="Enter name" value="{{student.name}}">
+        <input type="email" name="email" placeholder="Enter Email" value="{{student.email}}">
+        <input type="number" name="student_id" placeholder="Enter Student Id" value="{{student.student_id}}">
+        <input type="number" step="any" name="cgpa" placeholder="Enter Cgpa" value="{{student.cgpa}}">
+        <input type="submit">
+    </form>
+{% endblock  %}

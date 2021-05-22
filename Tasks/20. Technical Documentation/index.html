@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Menu</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="nav flex-column nav-pills position-fixed">
+
+                        <a class="nav-link  " href="#intro">Introduction</a>
+                        <a class="nav-link" href="#know">What you should already know</a>
+                        <a class="nav-link" href="#j-and-j">JavaScript and Java</a>
+                        <a class="nav-link" href="#variables">Variables</a>
+                        <a class="nav-link" href="#declaring">Declaring variables</a>
+                        <a class="nav-link" href="#scope">Variable scope</a>
+                        <a class="nav-link" href="#global">Global variables</a>
+
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <div id="intro">
+                            <h1>Introduction</h1>
+                            <p>
+                                JavaScript is a cross-platform, object-oriented scripting language. It is a small and
+                                lightweight language. Inside a host environment (for example, a web browser), JavaScript
+                                can be connected to the objects of its environment to provide programmatic control over
+                                them.
+
+                                JavaScript contains a standard library of objects, such as Array, Date, and Math, and a
+                                core set of language elements such as operators, control structures, and statements.
+                                Core JavaScript can be extended for a variety of purposes by supplementing it with
+                                additional objects; for example:
+                                <br><br>
+
+                                #Client-side JavaScript extends the core language by supplying objects to control a
+                                browser and its Document Object Model (DOM). For example, client-side extensions allow
+                                an application to place elements on an HTML form and respond to user events such as
+                                mouse clicks, form input, and page navigation.
+                                <br>
+                                #Server-side JavaScript extends the core language by supplying objects relevant to
+                                running JavaScript on a server. For example, server-side extensions allow an application
+                                to communicate with a database, provide continuity of information from one invocation to
+                                another of the application, or perform file manipulations on a server.
+                            </p>
+
+
+                        </div>
+                        <div id="know">
+                            <h1>What you should already know</h1>
+                            <p>
+                                This guide assumes you have the following basic background:
+                                <br>
+                                <br>
+                                A general understanding of the Internet and the World Wide Web (WWW).
+                                <br>
+                                Good working knowledge of HyperText Markup Language (HTML).
+                                <br>
+                                Some programming experience. If you are new to programming, try one of the tutorials
+                                linked on the main page about JavaScript.
+                            </p>
+                        </div>
+                        <div id="j-and-j">
+                            <h1>JavaScript and Java</h1>
+                            <p>JavaScript and Java are similar in some ways but fundamentally different in some others.
+                                The JavaScript language resembles Java but does not have Java's static typing and strong
+                                type checking. JavaScript follows most Java expression syntax, naming conventions and
+                                basic control-flow constructs which was the reason why it was renamed from LiveScript to
+                                JavaScript.
+                                <br>
+
+                                In contrast to Java's compile-time system of classes built by declarations, JavaScript
+                                supports a runtime system based on a small number of data types representing numeric,
+                                Boolean, and string values. JavaScript has a prototype-based object model instead of the
+                                more common class-based object model. The prototype-based model provides dynamic
+                                inheritance; that is, what is inherited can vary for individual objects. JavaScript also
+                                supports functions without any special declarative requirements. Functions can be
+                                properties of objects, executing as loosely typed methods.
+                                <br>
+
+                                JavaScript is a very free-form language compared to Java. You do not have to declare all
+                                variables, classes, and methods. You do not have to be concerned with whether methods
+                                are public, private, or protected, and you do not have to implement interfaces.
+                                Variables, parameters, and function return types are not explicitly typed.</p>
+
+                        </div>
+                        <div id="variables">
+                            <h1>Variables</h1>
+                            <p>You use variables as symbolic names for values in your application. The names of
+                                variables, called identifiers, conform to certain rules.
+                                <br>
+                                <br>
+
+                                A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($);
+                                subsequent characters can also be digits (0-9). Because JavaScript is case sensitive,
+                                letters include the characters "A" through "Z" (uppercase) and the characters "a"
+                                through "z" (lowercase).
+                                <br>
+                                <br>
+
+                                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also
+                                use the Unicode escape sequences as characters in identifiers. Some examples of legal
+                                names are Number_hits, temp99, and _name.</p>
+
+                        </div>
+                        <div id="declaring">
+                            <h1>Declaring variables</h1>
+                            <p>You can declare a variable in three ways:
+                                <br>
+                                With the keyword var. For example,<br>
+                                var x = 42.<br>
+                                This syntax can be used to declare both local and global variables.<br>
+
+                                By simply assigning it a value. For example,<br>
+                                x = 42.<br>
+                                This always declares a global variable. It generates a strict <br>JavaScript warning.
+                                You
+                                shouldn't use this variant.<br>
+
+                                With the keyword let. For example,<br>
+                                let y = 13.<br>
+                                This syntax can be used to declare a block scope local variable. See Variable scope
+                                below.</p>
+
+                        </div>
+                        <div id="scope">
+                            <h1>Variable scope</h1>
+                            <p>When you declare a variable outside of any function, it is called a global variable,
+                                because it is available to any other code in the current document. When you declare a
+                                variable within a function, it is called a local variable, because it is available only
+                                within that function.<br><br>
+
+                                JavaScript before ECMAScript 2015 does not have block statement scope; rather, a
+                                variable declared within a block is local to the function (or global scope) that the
+                                block resides within. For example the following code will log 5, because the scope of x
+                                is the function (or global context) within which x is declared, not the block, which in
+                                this case is an if statement.<br><br>
+
+                                if (true) { var x = 5; } console.log(x); // 5
+                                This behavior changes, when using the let declaration introduced in ECMAScript
+                                2015.<br><br>
+
+                                if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+                                defined</p>
+
+                        </div>
+                        <div id="global">
+                            <h1>Global variables</h1>
+                            <p>Global variables are in fact properties of the global object. In web pages the global
+                                object is window, so you can set and access global variables using the window.variable
+                                syntax.<br><br>
+
+                                Consequently, you can access global variables declared in one window or frame from
+                                another window or frame by specifying the window or frame name. For example, if a
+                                variable called phoneNumber is declared in a document, you can refer to this variable
+                                from an iframe as parent.phoneNumber.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

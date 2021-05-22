@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summetion</title>
+</head>
+<body>
+<h1>Summetion</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="number" placeholder="First number" name="u-fnumber">
+    <input type="number" placeholder="Second number" name="u-snumber">
+    <input type="submit">
+
+
+</form>
+
+<h1>Result</h1>
+<h3>{{ result }}</h3>
+
+</body>
+</html>

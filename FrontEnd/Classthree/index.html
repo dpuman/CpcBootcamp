@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Three</title>
+    <style>
+        table{
+            width: 20%;
+            height: 500px;
+        }
+        table,td,th{
+            border: 2px solid red;
+            border-collapse: collapse;
+            text-align: center;
+            
+
+        }
+        th{
+            background-color: yellow;
+        }
+        tr:nth-child(even){
+            background-color: gray;
+        }
+        tr:nth-child(odd){
+            background-color: skyblue;
+        }
+
+        ul{
+            list-style-type: circle;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+    <tr>
+        <th>a</th>
+        <th colspan="2">b</thcol>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td rowspan="2">4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+    <td>7</td>
+    <td>8</td>
+    </tr>
+    </table>
+    <h3>Running Bootcamp</h3>
+    <ul>
+        <li>Web</li>
+        <li>android</li>
+        <li>game</li>
+    </ul>
+</body>
+</html>

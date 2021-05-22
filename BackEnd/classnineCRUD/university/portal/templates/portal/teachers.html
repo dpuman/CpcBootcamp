@@ -1,0 +1,40 @@
+{% extends 'portal/layout.html' %}
+
+{% block body %}
+<form action="{% url 'teachers'%}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter name">
+    <input type="text" name="course" placeholder="Enter course">
+    <input type="submit" >
+</form>
+
+
+
+<h1>Teachers</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Course</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+   {% for teacher in teachers %}
+    <tr>
+       <th scope="row">{{forloop.counter}}</th>
+      <td>{{teacher.name}}</td>
+      <td>{{teacher.courses}}</td>
+      
+      <td><a href="edit/{{teacher.id}}">Edit</a> 
+        <a href="delete/{{teacher.id}}">Delete</a> 
+        </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+{% endblock  %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+</head>
+<body>
+    <h1>Teachers</h1>
+        {% for teacher in teachers %}
+        <h1>Name:{{teacher.name}} | Course: {{teacher.courses}}</h1>
+        {% endfor %}
+
+        <form action="{%url 'teacher'%}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="course" placeholder="Course">
+
+            <input type="submit" value="submit">
+
+        </form>
+
+</body>
+</html>

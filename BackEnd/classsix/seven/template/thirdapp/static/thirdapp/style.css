@@ -1,0 +1,23 @@
+body{
+    background: gray;
+}
+
+.content{
+    text-align: center;
+    border: 2px solid red;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+.form{
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+input{
+    display: block;
+    /*width: 100%;*/
+    margin: 5px;
+    padding: 10px;
+
+
+}

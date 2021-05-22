@@ -1,0 +1,40 @@
+
+{% extends 'portal/layout.html' %}
+    {% block body %}
+    
+    <form action="{% url 'students'%}" method="post">
+            {% csrf_token %}
+        <input type="text" name="name" placeholder="Enter name">
+        <input type="email" name="email" placeholder="Enter Email">
+        <input type="number" name="student_id" placeholder="Enter Student Id">
+        <input type="number" step="any" name="cgpa" placeholder="Enter Cgpa">
+        <input type="submit">
+    </form>
+
+
+    <h1>Students</h1>
+    <table   class="table">
+        <tr>
+          <th scope="col">Student NO</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Cgpa</th>
+          <th scope="col">Id</th>
+          <th scope="col">Actions</th>
+         
+        </tr>
+        {% for student in students %}
+            <tr>
+              <th scope="row">{{forloop.counter}}</th>
+            <td>{{student.name}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.cgpa}}</td>
+            <td>{{student.student_id}}</td>
+            <td><a href="edit/{{student.id}}">Edit</a>
+                 <a href="delete/{{student.id}}">Delete</a></td>
+            </tr>
+
+        {% endfor %}
+        
+      </table>
+{% endblock  %}

@@ -1,0 +1,15 @@
+body{
+    background: gray;
+}
+.inputs{
+    padding: 7px;
+            display: block;
+            margin: 10px;
+}
+.content{
+    text-align: center;
+    border: 2px solid red;
+    font-family: sans-serif;
+    color: aliceblue;
+
+}

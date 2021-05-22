@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six</title>
+    <style>
+        #container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box {
+            
+            position: relative;
+            box-sizing: border-box;
+            padding:10px;
+            margin:4px;
+            width:30%;
+            height: 250px;
+            background-color:orange;
+        }
+        .box p{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+        .ball {
+            background-color:red;
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+        }
+
+        .pos-1{
+            position: absolute;
+            top:5px;
+            left: 5px;
+        }
+        .pos-2{
+            position: absolute;
+            top:40%;
+            left: 5px;
+        }
+        .pos-3{
+            position: absolute;
+            top:78%;
+            left: 5px;
+        }
+        .pos-4{
+            position: absolute;
+            top:5px;
+            left: 45%;
+        }
+        .pos-5{
+            position: absolute;
+            top:40%;
+            left: 45%;
+            
+        }
+        .pos-6{
+            position: absolute;
+            top:78%;
+            left: 45%;
+        }
+        .pos-7{
+            position: absolute;
+            top:8px;
+            left: 88%;
+        }
+        .pos-8{
+            position: absolute;
+            top:40%;
+            left: 88%;
+        }
+        .pos-9{
+            position: absolute;
+            top:75%;
+            left: 88%;
+        }
+
+        h1{
+            color: orange;
+            text-shadow: 2px 2px 5px black;
+            margin-top:0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+            <p>Left Top;</p>
+            <div class="ball pos-1"></div>
+        </div>
+        <div class="box">
+            <p>Left Center;</p>
+            <div class="ball pos-2"></div>
+        </div>
+        <div class="box">
+            <p>Left Bottom;</p>
+            <div class="ball pos-3"></div>
+        </div>
+        <div class="box">
+            <p>center Top;</p>
+            <div class="ball pos-4"></div>
+        </div>
+        <div class="box">
+            <p>Center center</p>
+            <div class="ball pos-5"></div>
+        </div>
+        <div class="box">
+            <p>Center bottom</p>
+            <div class="ball pos-6"></div>
+        </div>
+        <div class="box">
+            <p>right top</p>
+            <div class="ball pos-7"></div>
+        </div>
+        <div class="box">
+            <p>right center</p>
+            <div class="ball pos-8"></div>
+        </div>
+        <div class="box">
+            <p>right bottom</p>
+            <div class="ball pos-9"></div>
+        </div>
+        <h1>CSS Background Position</h1>
+    </div>
+</body>
+</html>

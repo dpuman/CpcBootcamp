@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 50%;
+            }
+        form{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Students</h1>
+    {% for student in students %}
+
+        <h1>Name: {{student.name}} | Email: {{student.email}} | Id:{{student.student_id}} | CGPA:{{student.cgpa}}</h1>
+    {% endfor %}
+
+    <table >
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          
+          <th>Cgpa</th>
+          <th>Id</th>
+        </tr>
+        {% for stident in students %}
+            <tr>
+            <td>{{stident.name}}</td>
+            <td>{{stident.email}}</td>
+            <td>{{stident.cgpa}}</td>
+            <td>{{stident.student_id}}</td>
+            
+            </tr>
+        {% endfor %}
+        
+      </table>
+      <form action="{%url 'home'%}"method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="number" name="student_id" placeholder="Student Id">
+        <input type="number" step="any" name="cgpa" placeholder="Cgpa">
+        <input type="submit" value="submit">
+        </form> 
+
+
+     
+
+
+</body>
+</html>

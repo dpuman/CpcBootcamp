@@ -1,0 +1,5 @@
+database = sqlite3, mysql, postgresql etc
+sqlite browser = https://sqlitebrowser.org/dl/
+model = table = class
+migration = python manage.py makemigrations (generate migration file)
+migrate = python manage.py migrate (apply to the database)

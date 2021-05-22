@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color</title>
+    <style>
+         #contant{
+            display: block;
+            width: 70%;
+            margin: auto;
+            margin-top: 200px;
+            align-items: center;
+            text-align: center;
+
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelectorAll('button').forEach( function(button){
+                button.onclick =function(){
+                    document.querySelector('body').style.background=button.dataset.color
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="contant">
+        <h1>Change background color by clicking the buttons</h1>
+        <button data-color="orange">Orange</button>
+        <button data-color="yellow">Yellow</button>
+        <button data-color="gray">Gray</button>
+        <button data-color="#20B2AA">Green</button>
+        
+    </div>
+</body>
+</html>

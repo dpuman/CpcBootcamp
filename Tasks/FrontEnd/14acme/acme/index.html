@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACme</title>
+    <style>
+        *{
+            font-family: arial,sans-serif,helvetica;
+            margin:0px;
+            padding: 0px;
+            }
+        .container{
+            width:80%;
+            margin:auto;
+        }
+        .container h1{
+            display:inline-block;
+        }
+        .container ul{
+            
+            list-style: none;
+            float:right;
+            text-decoration: none;
+            margin:10px 0 0 0;
+        }
+        
+
+        header{
+            background-color:#35424a;
+            color:white;
+            padding:20px;
+            border-bottom: 3px solid #e8941d;
+        }
+        .highlight {
+            color:#e8941d;
+        }
+        .container a{
+            margin-left:10px;
+            text-decoration: none;
+        }
+        .narmal{
+            color:white;
+        }
+
+        #showcase::before{
+            content: "";
+            position: absolute;
+            background: url('img/showcase.jpg') no-repeat center center/cover;
+            height: 470px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.90;
+        }
+        .showcast{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height:390px;
+            color:white;
+            
+        }
+        .showcast h1{
+            margin-bottom:20px;
+            font-size: 55px;
+        }
+        .showcast p{
+            font-size:15px;
+        }
+        #newsletter{
+            background-color:#35424a;
+            color:white;
+            padding:20px;
+        }
+        .news h1{
+            display:inline-block;
+        }
+        .news form{
+            float:right;
+        }
+        .news input{
+            padding:5px;
+        }
+        .news button{
+            background-color: #e8491d;
+            border:none;
+            color: white;
+            padding:7px;
+        }
+
+        .boxes{
+            display:flex;
+        }
+        .box{
+            width:33%;
+            text-align:center;
+            padding:10px;
+            margin-top:10px
+        }
+        .box img{
+            display:block;
+            width:90px;
+            margin: 10px auto ;
+        }
+        .box h1{
+            margin-bottom:10px;
+        }
+
+        footer{
+            background-color:#e8491d;
+            padding:20px;
+            color: white;
+            text-align:center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> <span class="highlight">Acme </span>Web Design</h1>
+            <ul>
+                <li>
+                    <a  href="#" class="highlight">HOME</a>
+                    <a href="#" class="narmal">ABOUT</a>
+                    <a href="#" class="narmal">SERVICE</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container showcast">
+            <h1>Affordable Professional Web Design</h1>
+            <p>In this video we will build a clean coded responsive mobile friendly HTML5 website for a fictional web design company. We will go over semantic HTML tags like header and footer as well as the basics of HTML and CSS. This is a great project for beginners.</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container news">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter Your email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container boxes">
+            <div class="box">
+                <img src="img/logo_html.png">
+                <h1>HTML5 Markup</h1>
+                <p>In this video we will build a clean coded responsive mobile friendly HTML5 website for a fictional web design company</p>
+            </div>
+            
+            <div class="box">
+                <img src="img/logo_css.png">
+                <h1>CSS3 Styling</h1>
+                <p>In this video we will build a clean coded responsive mobile friendly HTML5 website for a fictional web design company</p>
+            </div>
+            
+            <div class="box">
+                <img src="img/logo_brush.png">
+                <h1>Graphic Design</h1>
+                <p>In this video we will build a clean coded responsive mobile friendly HTML5 website for a fictional web design company</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Acme Web Design, Copyright &copy; 2017</p>        
+    </footer>
+</body>
+</html>

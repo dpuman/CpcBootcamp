@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<h1>Enter the values</h1>
+
+<form  method="post">
+    {% csrf_token %}
+
+    <input type="number" placeholder="First number" name="u-first_number">
+    <input type="number" placeholder="Second number" name="u-second_number">
+    <select name="u-operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="submit">
+
+</form>
+
+</body>
+</html>

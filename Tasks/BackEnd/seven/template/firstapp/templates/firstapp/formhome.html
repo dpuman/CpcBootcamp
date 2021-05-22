@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Home</title>
+      <style>
+        input{
+            display: block;
+            margin: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+
+<form method="post">
+    {% csrf_token %}
+
+    <input type="text" placeholder="Site Name: " name="u-name">
+    <input type="text" name="u-types" size="50" list="types" placeholder="Select">
+        <datalist id="types">
+            <option value="E-commerce">
+            <option value="Magazine">
+            <option value="Portfolio">
+            <option value="Blogs">
+            <option value="Social media website">
+        </datalist>
+    <input type="text" placeholder="Copyright : " name="u-copyright">
+<!--    <input type="text" placeholder="details" name="u-details">-->
+    <textarea name="u-details" rows="10" cols="30">Write details here</textarea>
+    <input type="submit">
+
+
+</form>
+
+</body>
+</html>

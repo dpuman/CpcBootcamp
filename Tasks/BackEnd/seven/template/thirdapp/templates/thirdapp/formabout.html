@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form About</title>
+    <style>
+        .inputs{
+            display: block;
+            margin: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+<h1>Third app about</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <input class="inputs" type="text" placeholder="Name " name="u-name">
+    <input class="inputs" type="email" placeholder="Email " name="u-email">
+    <input class="inputs" type="text" placeholder="Address " name="u-address">
+    <input class="inputs" type="tel" pattern="[0-9]{11}" placeholder="01316981090" name="u-tel">
+    <input class="inputs" type="date" name="u-date">
+
+    <p>Please select your gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+    <input class="inputs" type="submit">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body{
+            background-color: #6E6460;
+        }
+        .flex-container{
+            
+            display:flex;
+            justify-content: space-around;
+        }
+
+        .flex-item{
+            height:700px;
+            width: 700px;
+            margin:20px;
+            
+        }
+        .item-one{
+            background-color:#72D5B5;
+        }
+        .item-two{
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+        }
+
+        .flex-item-child{
+            height: 200px;
+            
+        }
+
+        .flex-item-childs{
+            background-color: #72D5B5;
+        }
+
+        .flex-item-child-two{
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .child{
+            width:330px;
+            
+            background-color:#72D5B5;
+        }
+
+        .child:nth-child(1) {
+            margin-right:10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item item-one"></div>
+        <div class="flex-item item-two">
+            <div class="flex-item-child flex-item-childs "></div>
+            <div class="flex-item-child flex-item-child-two">
+                <div class="child"></div>
+                <div class="child"></div>
+            </div>
+            <div class="flex-item-child flex-item-childs"></div>
+        </div>
+    </div>
+</body>
+</html>

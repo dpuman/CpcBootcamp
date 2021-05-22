@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Second app home</title>
+    <link rel="stylesheet" href="{% static "secondapp/style.css" %}">
+</head>
+<body>
+<div class="content">
+<h1>Second app home</h1>
+
+<h3>Name: {{name}}</h3>
+<h3>Type: {{type}}</h3>
+<h3>Copyright: {{copyright}}</h3>
+<h2>Details</h2>
+<p>{{details}}</p>
+</div>
+</body>
+</html>

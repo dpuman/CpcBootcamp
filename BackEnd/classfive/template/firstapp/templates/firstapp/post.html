@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+    <style>
+        input{
+            display: inline-block;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<h1>Get the data</h1>
+
+<form method="post">
+    {% csrf_token %}
+
+    <input type="text" placeholder="Name" name="u-name">
+    <input type="email" placeholder="Email" name="u-email">
+    <input type="password" placeholder="PassWord" name="u-password">
+
+    <input type="submit">
+
+</form>
+
+</body>
+</html>
